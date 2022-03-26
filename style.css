@@ -1,6 +1,6 @@
 body {
   background-image: url('./cool-background.png');
-  background-size: 140%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
