@@ -1,0 +1,388 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/b/jet-plane-icon-jet-plane-icon-blue-white-background-120405606.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/acd5d6e700.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    <title>Travel Guide</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background: rgba(0, 0, 0, 0.5); box-shadow: 0 0 5px rgba(0, 0, 0, 0.8)">
+      <div class="container">
+        <a href="#home" class="navbar-brand">Travel Guide</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="#places" class="nav-link">Places</a></li>
+          <li class="nav-item"><a href="#heritage-sites" class="nav-link">Heritage Sites</a></li>
+        </ul>
+        </div>
+      </div>
+      </nav>
+    <section id="home" class="full-height middle text-center container">
+        <div class="">
+          <h1 class="text-white display-4 p-1">Travel the world</h1>
+          <a href="#" class="btn btn-dark btn-lg light-hover" role="button" tabindex="-1"><i class="fas fa-plane-departure"></i> Start Journey</a>
+        </div>
+    </section>
+    <section id="places" class="bg-light p-5">
+      <h2 class="display-6 text-center pt-4">Places</h2>
+      <p class="text-center lead">These are our top destinations.</p>
+      <div class="container">
+        <div class="places">
+          <!-- First card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#londonModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-london-england.jpg" alt="london" />
+            <div class="card-body">
+              <h2 class="card-title">London</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>England</strong></p>
+              <p class="card-text">A popular choice among our tourists. Definitely need to check it out if you haven't already.</p>
+            </div>
+          </div>
+          <!-- First card ends -->
+          <!-- First card modal starts -->
+          <div class="modal fade" id="londonModal" tabindex="-1" aria-labelledby="londonModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">London</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Pound sterling</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>8.982 million (2019)</span><span><strong>Official Language: </strong>English</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- First card modal ends -->
+          <!-- Second card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#parisModal">
+            <img class="card-img-top" src="data:image/jpeg;base64,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" alt="france" />
+            <div class="card-body">
+              <h2 class="card-title">Paris</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>France</strong></p>
+              <p class="card-text">France never ceases to avail to us amazing places to explore. Gotta check it out.</p>
+            </div>
+          </div>
+          <!-- Second card ends -->
+          <!-- Second card modal starts -->
+          <div class="modal fade" id="parisModal" tabindex="-1" aria-labelledby="parisModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Paris</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Also known as the Latin Quarter, the 5th arrondissement is home to the Sorbonne university and student-filled cafes. It's also known for its bookshops, including the famed Shakespeare & Company. Family-friendly attractions include the Jardin des Plantes botanical gardens and the National Museum of Natural History. The stately Panthéon building holds the remains of notables like Voltaire and Marie Curie. 
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Euro, CFP franc</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>2.161 million (2019)</span><span><strong>Official Language: </strong>French</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Second card modal ends -->
+          <!-- Third card  -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#bangkokModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-bangkok-thailand.jpg" alt="bangkok" />
+            <div class="card-body">
+              <h2 class="card-title">Bangkok</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Thailand</strong></p>
+              <p class="card-text">Looking for temples? This is definitely the place to find a lot.</p>
+            </div>
+          </div>
+          <!-- Third card ends -->
+          <!-- Third card modal starts -->
+          <div class="modal fade" id="bangkokModal" tabindex="-1" aria-labelledby="bangkokModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">China</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The boat-filled Chao Phraya River feeds its network of canals, flowing past the Rattanakosin royal district, home to opulent Grand Palace and its sacred Wat Phra Kaew Temple. Nearby is Wat Pho Temple with an enormous reclining Buddha and, on the opposite shore, Wat Arun Temple with its steep steps and Khmer-style spire. 
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Thai baht</span></p>
+                  <p class="spaced-text"><span><strong>Metro Population: </strong>14,626,225</span><span><strong>Official Language: </strong>Thai</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Third card modal ends -->
+          <!-- Fourth card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#hongkongModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-hong-kong.jpg" alt="hong kong" />
+            <div class="card-body">
+              <h2 class="card-title">Hong Kong</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>China</strong></p>
+              <p class="card-text">Try going on a shopping spree in Hong Kong. Come back and thank me later.</p>
+            </div>
+          </div>
+          <!-- Fourth card ends -->
+          <!-- Fourth card modal starts -->
+          <div class="modal fade" id="hongkongModal" tabindex="-1" aria-labelledby="hongkongModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Hong Kong</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Hong Kong, officially the Hong Kong Special Administrative Region of the People's Republic of China, is a city and special administrative region of China on the eastern Pearl River Delta in South China.
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Renminbi</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>7.482 million (2020)</span><span><strong>Official Language: </strong>Mandarin</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth card modal ends -->
+          <!-- Fifth card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#newYorkModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-new-york-city.jpg" alt="newYork" />
+            <div class="card-body">
+              <h2 class="card-title">New York</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>USA</strong></p>
+              <p class="card-text">Visit the most populous city in the United States.</p>
+            </div>
+          </div>
+          <!-- Fifth card ends -->
+          <!-- Fifth card modal starts -->
+          <div class="modal fade" id="newYorkModal" tabindex="-1" aria-labelledby="newYorkModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">New York</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire State Building and sprawling Central Park. Broadway theater is staged in neon-lit Times Square. 
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>United States Dollars (USD)</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>8.419 million (2019)</span><span><strong>Official Language: </strong>English</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Fifth card modal ends -->
+          <!-- Sixth card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#singaporeModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-singapore.jpg" alt="singapore" />
+            <div class="card-body">
+              <h2 class="card-title">Singapore City</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Singapore</strong></p>
+              <p class="card-text">Singapore attracts travelers all year round. You could be one.</p>
+            </div>
+          </div>
+          <!-- Sixth card ends -->
+          <!-- Sixth card modal starts -->
+          <div class="modal fade" id="singaporeModal" tabindex="-1" aria-labelledby="singaporeModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Singapore City</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Singapore, officially the Republic of Singapore, is a sovereign island city-state in maritime Southeast Asia. Well-known landmarks include the Merlion, Marina Bay Sands, Gardens by the Bay, the Jewel, the Orchard Road shopping belt, the resort island of Sentosa, and the Singapore Botanic Gardens, Singapore's first UNESCO World Heritage Site.
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Singapore dollar</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>5.686 million (2020)</span><span><strong>Official Languages: </strong> English, Malay, Tamil, Mandarin Chinese</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sixth card modal ends -->
+          <!-- Seventh card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#istanbulModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-istanbul-turkey.jpg" alt="istanbul" />
+            <div class="card-body">
+              <h2 class="card-title">Istanbul</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Turkey</strong></p>
+              <p class="card-text">One of the world's famous cities, so it makes sense that people want to visit.</p>
+            </div>
+          </div>
+          <!-- Seventh card ends -->
+          <!-- Seventh card modal starts -->
+          <div class="modal fade" id="istanbulModal" tabindex="-1" aria-labelledby="istanbulModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Istanbul</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Istanbul is a major city in Turkey that straddles Europe and Asia across the Bosphorus Strait. Its Old City reflects cultural influences of the many empires that once ruled here. In the Sultanahmet district, the open-air, Roman-era Hippodrome was for centuries the site of chariot races, and Egyptian obelisks also remain. The iconic Byzantine Hagia Sophia features a soaring 6th-century dome and rare Christian mosaics.
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Turkish lira</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>15.46 million (Dec 31, 2020)</span><span><strong>Official Language: </strong>Turkish</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Seventh card modal ends -->
+          <!-- Eighth card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#tokyoModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2020/03/world-most-visited-cities-tokyo-japan.jpg" alt="tokyo" />
+            <div class="card-body">
+              <h2 class="card-title">Tokyo</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Japan</strong></p>
+              <p class="card-text">An exciting city that attracts millions every year.</p>
+            </div>
+          </div>
+          <!-- Eighth card ends -->
+          <!-- Eighth card modal starts -->
+          <div class="modal fade" id="tokyoModal" tabindex="-1" aria-labelledby="tokyoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Tokyo</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Japanese yen</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>13.96 million (2021)</span><span><strong>Official Language: </strong>Japanese</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Eighth card modal ends -->
+          <!-- Ninth card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#capeTownModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-cape-town-south-africa.jpg" alt="cape town" />
+            <div class="card-body">
+              <h2 class="card-title">Cape Town</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>South Africa</strong></p>
+              <p class="card-text">One of the most beloved destinations on the continent.</p>
+            </div>
+          </div>
+          <!-- Ninth card ends -->
+          <!-- Ninth card modal starts -->
+          <div class="modal fade" id="capeTownModal" tabindex="-1" aria-labelledby="capeTownModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Cape Town</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Cape Town is a port city on South Africa’s southwest coast, on a peninsula beneath the imposing Table Mountain. Slowly rotating cable cars climb to the mountain’s flat top, from which there are sweeping views of the city, the busy harbor and boats heading for Robben Island, the notorious prison that once held Nelson Mandela, which is now a living museum.
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>South African rand</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>4.618 million (2020)</span><span><strong>Official Languages: </strong>Afrikaans, English, Xhosa, Zulu, Southern Sotho, Venda, Northern Sotho, Tswana, Tsonga, Swati, Ndebele</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Ninth card modal ends -->
+          <!-- Tenth card -->
+          <div class="card m-4" data-bs-toggle="modal" data-bs-target="#gizaModal">
+            <img class="card-img-top" src="https://www.planetware.com/wpimages/2021/04/africa-best-places-to-visit-great-pyramids-cairo-egypt.jpg" alt="giza" />
+            <div class="card-body">
+              <h2 class="card-title">Giza</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Egypt</strong></p>
+              <p class="card-text">This city offers a view you will never forget.</p>
+            </div>
+          </div>
+          <!-- Tenth card ends -->
+          <!-- Tenth card modal starts -->
+          <div class="modal fade" id="gizaModal" tabindex="-1" aria-labelledby="gizaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Giza</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Giza is an Egyptian city on the west bank of the Nile, near Cairo. The Giza Plateau is home to iconic Egyptian monuments, including 3 tall pyramids built as royal mausoleums around the 26th century B.C. The largest, the Great Pyramid, is King Khufu’s tomb. The Great Sphinx is a vast sculpture of a man’s head on a lion’s body. The Solar Boat Museum displays a restored cedar barge found buried near the Great Pyramid.
+                  <p class="spaced-text mt-4"><span><strong>Currency: </strong>Egyptian Pound</span></p>
+                  <p class="spaced-text"><span><strong>Population: </strong>8.8 million (Oct 2018)</span><span><strong>Official Language: </strong>Modern Standard Arabic</span></p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Tenth card modal ends -->
+        </div>
+      </div>
+    </section>
+    <section id="heritage-sites" class="bg-dark p-5 text-light">
+      <h2 class="display-6 text-center pt-4">Heritage Sites</h2>
+      <p class="text-center lead">Check out these memorable sites.</p>
+      <div class="container">
+        <div class="heritage-sites">
+          <!-- Machu Picchu -->
+          <div class="card bg-dark m-4">
+            <img class="card-img-top" src="https://lh5.googleusercontent.com/p/AF1QipO-0CwgZNPWc_CfvJbCrGmS2bKkxFv53o9QKIoi=w408-h272-k-no" alt="machu picchu" />
+            <div class="card-body">
+              <h2 class="card-title">Machu Picchu</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Peru</strong></p>
+              <a target="_blank" href="https://www.google.com/maps/place/Machu+Picchu/@-13.163136,-72.5471516,17z/data=!3m1!4b1!4m5!3m4!1s0x916d9a5f89555555:0x3a10370ea4a01a27!8m2!3d-13.1631412!4d-72.5449629" class="btn btn-primary">View on Map</a>
+            </div>
+          </div>
+          <!-- End of Machu Picchu -->
+          <!-- Angkor -->
+          <div class="card bg-dark m-4">
+            <img class="card-img-top" src="https://lh5.googleusercontent.com/p/AF1QipMCmNbSbiN12EYv02w48Br48ajW4loE5iF4YLoy=w408-h268-k-no" alt="angkor wat" />
+            <div class="card-body">
+              <h2 class="card-title">Angkor Wat</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Cambodia</strong></p>
+              <a target="_blank" href="https://www.google.com/maps/place/Angkor+Wat/@13.4005129,103.7990189,12z/data=!4m9!1m2!2m1!1sangkor+wat!3m5!1s0x3110168aea9a272d:0x3eaba81157b0418d!8m2!3d13.4124693!4d103.8669857!15sCgphbmdrb3Igd2F0WgwiCmFuZ2tvciB3YXSSAQ9idWRkaGlzdF90ZW1wbGWaASNDaFpEU1VoTk1HOW5TMFZKUTBGblNVTlZOUzF5Y0ZKbkVBRQ" class="btn btn-primary">View on Map</a>
+            </div>
+          </div>
+          <!-- End of Angkor -->
+          <!-- Great Wall -->
+          <div class="card bg-dark m-4">
+            <img class="card-img-top" src="https://lh5.googleusercontent.com/proxy/p0WCx5wMiACRUfxlqxxvxcBMPE4lXNsBsEdWSg9_iVjVOugvFOVsY8GXkqusrotzmuBW3-GJcroBsW07_WCilwFC6eOZNL_O94VbSLYom6hFZVqKPFc-WB2e8qtstIOrmEih3kGyfRdjdI8gPgqKN_TGcbjigw=w408-h272-k-no" alt="great wall" />
+            <div class="card-body">
+              <h2 class="card-title">Great Wall</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>China</strong></p>
+              <a target="_blank" href="https://www.google.com/maps/place/Great+Wall+of+China/@40.4319118,116.5681862,17z/data=!3m1!4b1!4m5!3m4!1s0x35f121d7687f2ccf:0xd040259b950522df!8m2!3d40.4319077!4d116.5703749" class="btn btn-primary">View on Map</a>
+            </div>
+          </div>
+          <!-- End of Great Wall -->
+          <!-- Nubian Monuments -->
+          <div class="card bg-dark m-4">
+            <img class="card-img-top" src="https://lh5.googleusercontent.com/p/AF1QipMecYFf9jdGJvR2H5g5H_d7tcuK9C99FhWIpAA_=w408-h240-k-no-pi-13.1713085-ya244.99942-ro0.1795541-fo100"  atl="nubian monuments" />
+            <div class="card-body">
+              <h2 class="card-title">Nubian Monuments</h2>
+              <p class="card-subtitle mb-3 text-muted"><strong>Egypt</strong></p>
+              <a target="_blank" href="https://www.google.com/maps/place/Nubian+Monuments+from+Abu+Simbel+to+Philae/@24.0255175,32.8819581,17z/data=!3m1!4b1!4m5!3m4!1s0x14366358bdc3230d:0xe7cad2b0ed42e3eb!8m2!3d24.0255126!4d32.8841468" class="btn btn-primary">View on Map</a>
+            </div>
+          </div>
+          <!-- End of Nubian Monuments -->
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>

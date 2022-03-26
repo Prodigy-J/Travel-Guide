@@ -1,0 +1,74 @@
+body {
+  background-image: url('./cool-background.png');
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navbar {
+  backdrop-filter: blur(3px);
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-hover:hover {
+  background-color: transparent;
+  border-color: white;
+}
+
+.card {
+  width: 20rem;
+  transition: all 0.5s ease;
+}
+
+.places .card {
+  cursor: pointer;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px #ccc;
+}
+
+.places {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.spaced-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.heritage-sites {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.heritage-sites .card {
+  border-color: #555;
+}
+
+.heritage-sites .card:hover {
+  box-shadow: 0 0 20px #444;
+}
+
+@media screen and (max-width: 750px) {
+  .modal-dialog {
+    width: 80%;
+    margin: auto;
+  }
+}
